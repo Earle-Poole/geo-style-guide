@@ -208,12 +208,11 @@ function colorCodeGenerator() {
       break;
     }
     
-    default: null;
+    default: console.log("How is there no theme?!");
   };
 };
 
 document.addEventListener("DOMContentLoaded", (e) => {
-  console.log(e);
   selectNewTab();
   colorCodeGenerator();
 });
