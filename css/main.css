@@ -10,7 +10,6 @@ hr {
 
 img {
   width: 100%;
-  max-width: 300px;
 }
 
 .theme-tab, .tabs-body, .table-of-contents {
@@ -69,9 +68,8 @@ img {
   padding: 10px 0;
 }
 
-.long-logo-container {
-  height: calc(100% - 20px);
-  padding: 60px 0;
+.logo-container img {
+  max-width: 300px;
 }
 
 .logo-container .logo-transparent {
@@ -79,13 +77,22 @@ img {
   border-radius: 100%;
 }
 
+.long-logo-container {
+  height: calc(100% - 20px);
+  padding: 60px 0;
+}
+
 .long-logo-container .logo-transparent {
   background: #88888822;
   border-radius: 10px;
 }
 
-/* Imagery - @imagery */
+/* Icons - @icons */
+.icon-container img {
 
+}
+
+/* Imagery - @imagery */
 
 
 /* Color Palette base - @color-palette*/
