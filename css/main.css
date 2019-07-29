@@ -70,6 +70,7 @@ img {
 }
 
 .long-logo-container {
+  height: calc(100% - 20px);
   padding: 60px 0;
 }
 
