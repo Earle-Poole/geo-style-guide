@@ -1,0 +1,211 @@
+body {
+  background-color: #333333;
+  width: 100%;
+  padding: 25px 50px;
+}
+
+hr {
+  width: calc(100% - 20px);
+}
+
+.theme-tab, .tabs-body, .table-of-contents {
+  border: 1px solid #444444;
+  box-sizing: border-box;
+}
+
+/* Body of selected tab - @body */
+.tabs-body, .table-of-contents {
+  height: auto;
+  border-top: none;
+  background-color: #eeeeee;
+}
+
+.tabs-body {
+  border-radius: 0 0 10px 10px;
+}
+
+/* Table of Contents - @table*/
+.table-of-contents {
+  border-bottom: none;
+  padding: 10px 0;
+}
+
+/* Theme selection tabs - @tabs */
+.theme-tab {
+  background-color: #cccccc;
+  border-radius: 10px 10px 0 0;
+  height: 40px;
+  overflow: hidden;
+}
+
+.theme-tab > span {
+  vertical-align: middle;
+}
+
+.theme-tab > span:before {
+  content: '\25CF';
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.theme-tab:hover {
+  cursor: pointer;
+}
+
+.theme-tab.selected {
+  border-bottom: none;
+  cursor: default;
+  background-color: #eeeeee;
+}
+
+/* Color Palette base - @color-palette*/
+#primary-color h5,
+#secondary-color h5,
+#primary-background-color h5,
+#secondary-background-color h5 {
+  text-align: center;
+}
+
+#electric-power-color,
+#chemical-processing-color,
+#terminals-color,
+#metals-minerals-color,
+#pipelines-color,
+#pulp-paper-wood-color,
+#production-color,
+#food-beverage-color,
+#alternative-fuels-color,
+#industrial-manufacturing-color,
+#petroleum-refining-color,
+#pharmaceutical-biotech-color {
+  color: white;
+  text-align: center;
+  border-radius: 7px;
+  margin: 4px 0;
+  height: 25px;
+}
+
+/* Specialty Colors - @specialty*/
+#specialty-color {
+  white-space: nowrap;
+}
+
+#specialty-color .text-right {
+  margin: auto 0;
+}
+
+#electric-power-color {
+  background-color: #990000;
+}
+
+#chemical-processing-color {
+  background-color: #007EA8;
+}
+
+#terminals-color {
+  background-color: #C75300;
+}
+
+#metals-minerals-color {
+  background-color: #993A00;
+}
+
+#pipelines-color {
+  background-color: #C77500;
+}
+
+#pulp-paper-wood-color {
+  background-color: #227722;
+}
+
+#production-color {
+  background-color: #C79500;
+}
+
+#food-beverage-color {
+  background-color: #CC3333;
+}
+
+#alternative-fuels-color {
+  background-color: #55BB55;
+}
+
+#industrial-manufacturing-color {
+  background-color: #1C4694;
+}
+
+#petroleum-refining-color {
+  background-color: #1A4E69;
+}
+
+#pharmaceutical-biotech-color {
+  background-color: #662C98;
+}
+
+
+/* Dark Theme - @dark */
+.dark-theme .theme-tab > span:before,
+.dark-theme #primary-color:before {
+  color: #F39C12;
+}
+
+.dark-theme #primary-color circle {
+  fill: #F39C12;
+}
+
+.dark-theme #secondary-color circle {
+  fill: #337ab7;
+}
+
+.dark-theme #primary-background-color circle {
+  fill: #444444;
+}
+
+.dark-theme #secondary-background-color circle {
+  fill: #333333;
+}
+
+/* Light Theme - @light */
+.light-theme.theme-tab > span:before,
+.light-theme #primary-color:before {
+  color: #1C4695;
+}
+
+.light-theme #primary-color circle {
+  fill: #F39C12;
+}
+
+.light-theme #secondary-color circle {
+  fill: #337ab7;
+}
+
+.light-theme #primary-background-color circle {
+  fill: #AAAAAA;
+}
+
+.light-theme #secondary-background-color circle {
+  fill: #888888;
+}
+
+/* Monochrome Theme - @monochrome */
+.monochrome-theme.theme-tab > span:before,
+.monochrome-theme #primary-color:before {
+  color: #444444;
+}
+
+.monochrome-theme #primary-color circle {
+  fill: #444444;
+}
+
+.monochrome-theme #secondary-color circle {
+  fill: #666666;
+}
+
+.monochrome-theme #primary-background-color circle {
+  fill: #EEEEEE;
+  stroke: #333333;
+}
+
+.monochrome-theme #secondary-background-color circle {
+  fill: #CCCCCC;
+}

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="./css/main.css" />
+  <link rel="icon" href="favicon.ico" type="icon">
+  <title>GeoXplorer Style Guide</title>
+</head>
+<body>
+  <!-- Theme Container section -->
+  <div class="container-fluid dark-theme">
+    <!-- Tabs section -->
+    <div class="row tabs">
+      <div class="col-4 theme-tab dark-theme selected">
+        <span>Dark Theme</span>
+      </div>
+      <div class="col-4 theme-tab light-theme">
+        <span>Light Theme</span>
+      </div>
+      <div class="col-4 theme-tab monochrome-theme">
+        <span>Monochrome Theme</span>
+      </div>
+    </div>
+    <!-- END Tabs section-->
+
+    <!-- Table of Contents section -->
+    <div class="row table-of-contents">
+      <div class="col-12">
+        <h3>Table of Contents</h3>
+      </div>
+      <hr>
+    </div>
+    <!-- END Table of Contents section -->
+
+    <!-- Body section -->
+    <div class="row tabs-body">
+
+      <!-- Color Palette section -->
+      <div id="color-palette" class="col-12">
+        <div class="col-12">
+          <h4>Color Palette</h4>
+        </div>
+        <br/>
+        <!-- Primary and Secondary Color section -->
+        <div class="row">
+          <!-- Primary Color -->
+          <div id="primary-color" class="col-12 col-md-6">
+            <svg viewBox="0 0 1000 250">
+              <circle r="120" cy="125" cx="497"
+                  stroke-width="2" />
+            </svg>
+            <h5>Primary Color</h5>
+            <div class="row">
+              <div class="col-6 text-right">
+                <span>HEX Code:</span>
+              </div>
+              <div class="col-6">
+                <span id="hex-primary-code"></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 text-right">
+                <span>RGBA Code:</span>
+              </div>
+              <div class="col-6">
+                <span id="rgba-primary-code"></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 text-right">
+                <span>HSLA Code:</span>
+              </div>
+              <div class="col-6">
+                <span id="hsla-primary-code"></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 text-right">
+                <span>CMYK Code:</span>
+              </div>
+              <div class="col-6">
+                <span id="cmyk-primary-code"></span>
+              </div>
+            </div>
+            <br/>
+          </div>
+          <!-- END Primary Color -->
+          <!-- Secondary Color -->
+          <div id="secondary-color" class="col-12 col-md-6">
+            <svg viewBox="0 0 1000 250">
+              <circle r="120" cy="125" cx="497"
+                  stroke-width="2" />
+            </svg>
+            <h5>Secondary Color</h5>
+            <div class="row">
+              <div class="col-6 text-right">
+                <span>HEX Code:</span>
+              </div>
+              <div class="col-6">
+                <span id="hex-secondary-code"></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 text-right">
+                <span>RGBA Code:</span>
+              </div>
+              <div class="col-6">
+                <span id="rgba-secondary-code"></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 text-right">
+                <span>HSLA Code:</span>
+              </div>
+              <div class="col-6">
+                <span id="hsla-secondary-code"></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 text-right">
+                <span>CMYK Code:</span>
+              </div>
+              <div class="col-6">
+                <span id="cmyk-secondary-code"></span>
+              </div>
+            </div>
+          </div>
+          <!-- END Secondary Color -->
+        </div>
+        <!-- END Primary and Secondary Color section -->
+        <br/>
+        <!-- Primary and Secondary Background Color section -->
+        <div class="row">
+          <!-- Primary Background Color section -->
+          <div id="primary-background-color" class="col-12 col-md-6">
+            <svg viewBox="0 0 1000 250">
+              <circle r="120" cy="125" cx="497"
+                  stroke-width="2" />
+            </svg>
+            <h5>Primary Background Color</h5>
+            <div class="row">
+              <div class="col-6 text-right">
+                <span>HEX Code:</span>
+              </div>
+              <div class="col-6">
+                <span id="hex-primary-background-code"></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 text-right">
+                <span>RGBA Code:</span>
+              </div>
+              <div class="col-6">
+                <span id="rgba-primary-background-code"></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 text-right">
+                <span>HSLA Code:</span>
+              </div>
+              <div class="col-6">
+                <span id="hsla-primary-background-code"></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 text-right">
+                <span>CMYK Code:</span>
+              </div>
+              <div class="col-6">
+                <span id="cmyk-primary-background-code"></span>
+              </div>
+            </div>
+            <br/>
+          </div>
+          <!-- END Primary Background Color section -->
+          <!-- Secondary Background Color section -->
+          <div id="secondary-background-color" class="col-12 col-md-6">
+            <svg viewBox="0 0 1000 250">
+              <circle r="120" cy="125" cx="497"
+                  stroke-width="2" />
+            </svg>
+            <h5>Secondary Background Color</h5>
+            <div class="row">
+              <div class="col-6 text-right">
+                <span>HEX Code:</span>
+              </div>
+              <div class="col-6">
+                <span id="hex-secondary-background-code"></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 text-right">
+                <span>RGBA Code:</span>
+              </div>
+              <div class="col-6">
+                <span id="rgba-secondary-background-code"></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 text-right">
+                <span>HSLA Code:</span>
+              </div>
+              <div class="col-6">
+                <span id="hsla-secondary-background-code"></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 text-right">
+                <span>CMYK Code:</span>
+              </div>
+              <div class="col-6">
+                <span id="cmyk-secondary-background-code"></span>
+              </div>
+            </div>
+          </div>
+          <!-- END Secondary Background Color section -->
+        </div>
+        <!-- END Primary and Secondary Background Color section -->
+        <br/>
+        <!-- Specialty Colors section -->
+        <div class="row">
+          <div id="specialty-color" class="col-12">
+            <!-- Specialty Colors Title section -->
+            <div class="text-center col-6">
+              <h5>Specialty Colors</h5>
+            </div>
+            <!-- END Specialty Colors Title section -->
+            <!-- Specialty Colors List section -->
+            <div class="row">
+              <!-- Electric Power Color section -->
+              <div class="col-12 col-md-6">
+                <div class="row">
+                  <div class="col-7 text-right">
+                    <span>Electric Power:</span>
+                  </div>
+                  <p class="col-3" id="electric-power-color">
+                    #990000
+                  </p>
+                </div>
+              </div>
+              <!-- END Electric Power Color section -->
+              <!-- Chemical Processing Color section -->
+              <div class="col-12 col-md-6">
+                <div class="row">
+                  <div class="col-7 text-right">
+                    <span>Chemical Processing (CPI):</span>
+                  </div>
+                  <p class="col-3" id="chemical-processing-color">
+                    #007EA8
+                  </p>
+                </div>
+              </div>
+              <!-- END Chemical Processing Color section -->
+              <!-- Terminals Color section -->
+              <div class="col-12 col-md-6">
+                <div class="row">
+                  <div class="col-7 text-right">
+                    <span>Terminals:</span>
+                  </div>
+                  <p class="col-3" id="terminals-color">
+                    #C75300
+                  </p>
+                </div>
+              </div>
+              <!-- END Terminals Color section -->
+              <!-- Metals & Minerals Color section -->
+              <div class="col-12 col-md-6">
+                <div class="row">
+                  <div class="col-7 text-right">
+                    <span>Metals & Minerals:</span>
+                  </div>
+                  <p class="col-3" id="metals-minerals-color">
+                    #993A00
+                  </p>
+                </div>
+              </div>
+              <!-- END Metals & Minerals Color section -->
+              <!-- Pipelines Color section -->
+              <div class="col-12 col-md-6">
+                <div class="row">
+                  <div class="col-7 text-right">
+                    <span>Pipelines:</span>
+                  </div>
+                  <p class="col-3" id="pipelines-color">
+                    #C77500
+                  </p>
+                </div>
+              </div>
+              <!-- END Pipelines Color section -->
+              <!-- Pulp, Paper & Wood Color section -->
+              <div class="col-12 col-md-6">
+                <div class="row">
+                  <div class="col-7 text-right">
+                    <span>Pulp, Paper & Wood:</span>
+                  </div>
+                  <p class="col-3" id="pulp-paper-wood-color">
+                    #227722
+                  </p>
+                </div>
+              </div>
+              <!-- END Pulp, Paper & Wood Color section -->
+              <!-- Production Color section -->
+              <div class="col-12 col-md-6">
+                  <div class="row">
+                    <div class="col-7 text-right">
+                      <span>Production:</span>
+                    </div>
+                    <p class="col-3" id="production-color">
+                      #C79500
+                    </p>
+                  </div>
+                </div>
+                <!-- END Production Color section -->
+                <!-- Food & Beverage Color section -->
+                <div class="col-12 col-md-6">
+                  <div class="row">
+                    <div class="col-7 text-right">
+                      <span>Food & Beverage:</span>
+                    </div>
+                    <p class="col-3" id="food-beverage-color">
+                      #CC3333
+                    </p>
+                  </div>
+                </div>
+                <!-- END Food & Beverage Color section -->
+                <!-- Alternative Fuels Color section -->
+                <div class="col-12 col-md-6">
+                  <div class="row">
+                    <div class="col-7 text-right">
+                      <span>Alternative Fuels:</span>
+                    </div>
+                    <p class="col-3" id="alternative-fuels-color">
+                      #55BB55
+                    </p>
+                  </div>
+                </div>
+                <!-- END Alternative Fuels Color section -->
+                <!-- Industrial Manufacturing Color section -->
+                <div class="col-12 col-md-6">
+                  <div class="row">
+                    <div class="col-7 text-right">
+                      <span>Industrial Manufacturing:</span>
+                    </div>
+                    <p class="col-3" id="industrial-manufacturing-color">
+                      #1C4694
+                    </p>
+                  </div>
+                </div>
+                <!-- END Industrial Manufacturing Color section -->
+                <!-- Petroleum Refining (HPI) Color section -->
+                <div class="col-12 col-md-6">
+                  <div class="row">
+                    <div class="col-7 text-right">
+                      <span>Petroleum Refining (HPI):</span>
+                    </div>
+                    <p class="col-3" id="petroleum-refining-color">
+                      #1A4E69
+                    </p>
+                  </div>
+                </div>
+                <!-- END Petroleum Refining (HPI) Color section -->
+                <!-- Pharmaceutical & Biotech Color section -->
+                <div class="col-12 col-md-6">
+                  <div class="row">
+                    <div class="col-7 text-right">
+                      <span>Pharmaceutical & Biotech:</span>
+                    </div>
+                    <p class="col-3" id="pharmaceutical-biotech-color">
+                      #662C98
+                    </p>
+                  </div>
+                </div>
+                <!-- END Petroleum Refining (HPI) Color section -->
+            </div>
+            <!-- END Specialty Colors List section-->
+          </div>
+        </div>
+        <!-- END Specialty Colors section -->
+      </div>
+      <!-- END Color Palette section -->
+      <hr>
+    </div>
+    <!-- END Body section -->
+  </div>
+  <!-- END Theme Container section -->
+
+  <script src="js/main.js"></script>
+</body>
+</html>
