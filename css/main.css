@@ -2,6 +2,7 @@ body {
   background-color: #333333;
   width: 100%;
   padding: 25px 50px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
 hr {
@@ -73,7 +74,7 @@ img {
 }
 
 .logo-container .logo-transparent {
-  background: #88888822;
+  background: #44444422;
   border-radius: 100%;
 }
 
@@ -83,16 +84,35 @@ img {
 }
 
 .long-logo-container .logo-transparent {
-  background: #88888822;
+  background: #44444422;
   border-radius: 10px;
 }
 
-/* Icons - @icons */
-.icon-container img {
+/* Imagery - @imagery */
 
+/* Icons - @icons */
+.icon-container,
+.white-icon-container{
+  margin: 10px;
 }
 
-/* Imagery - @imagery */
+.white-icon-container {
+  background: #44444422;
+  border-radius: 10px;
+}
+
+.icon-sm {
+  width: 20px;
+}
+
+.icon-md {
+  width: 40px;
+}
+
+.icon-lg {
+  width: 60px;
+}
+
 
 
 /* Color Palette base - @color-palette*/
