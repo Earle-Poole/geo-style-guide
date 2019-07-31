@@ -113,7 +113,10 @@ img {
   width: 60px;
 }
 
-
+/* Fonts - @fonts */
+.font-title-subtext {
+  font-size: 10px;
+}
 
 /* Color Palette base - @color-palette*/
 #primary-color h5,
