@@ -219,6 +219,7 @@ img {
 
 .dark-theme #primary-background-color circle {
   fill: #444444;
+  stroke: #EEEEEE;
 }
 
 .dark-theme #secondary-background-color circle {
