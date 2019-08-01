@@ -50,7 +50,6 @@ img {
 
 /* Theme selection tabs - @tabs */
 .theme-tab {
-  background-color: #cccccc;
   border-radius: 10px 10px 0 0;
   height: 40px;
   overflow: hidden;
@@ -230,11 +229,25 @@ img {
 .dark-theme h3,
 .dark-theme h4,
 .dark-theme h5 {
-  color:  #eeeeee
+  color:  #EEEEEE
+}
+
+.dark-theme.theme-tab,
+.dark-theme .tabs-body, 
+.dark-theme .table-of-contents {
+  border: 1px solid #EEEEEE;
+  border-bottom: none;
 }
 
 .dark-theme .theme-tab.selected {
   background-color: #444444;
+  border-bottom: none;
+}
+
+.dark-theme .tabs-body,
+.dark-theme .table-of-contents {
+  border-top: none;
+  border-bottom: none;
 }
 
 .dark-theme.theme-tab > span:before,
@@ -281,8 +294,22 @@ img {
   color:  #333333
 }
 
+.light-theme.theme-tab,
+.light-theme .tabs-body, 
+.light-theme .table-of-contents {
+  border: 1px solid #333333;
+  border-bottom: none;
+}
+
 .light-theme .theme-tab.selected {
   background-color: #EEEEEE;
+  border-bottom: none;
+}
+
+.light-theme .tabs-body,
+.light-theme .table-of-contents {
+  border-top: none;
+  border-bottom: none;
 }
 
 .light-theme.theme-tab > span:before,
@@ -328,8 +355,22 @@ img {
   color:  #333333
 }
 
+.monochrome-theme.theme-tab,
+.monochrome-theme .tabs-body, 
+.monochrome-theme .table-of-contents {
+  border: 1px solid #000000;
+  border-bottom: none;
+}
+
 .monochrome-theme .theme-tab.selected {
   background-color: #AAAAAA;
+  border-bottom: none;
+}
+
+.monochrome-theme .tabs-body,
+.monochrome-theme .table-of-contents {
+  border-top: none;
+  border-bottom: none;
 }
 
 .monochrome-theme.theme-tab > span:before,
