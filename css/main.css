@@ -1,8 +1,8 @@
 body {
-  background-color: #333333;
-  width: 100%;
+  background-color: #111111;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   padding: 25px 50px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  width: 100%;
 }
 
 hr {
@@ -23,8 +23,8 @@ img {
 /* Body of selected tab - @body */
 .tabs-body, 
 .table-of-contents {
-  height: auto;
   border-top: none;
+  height: auto;
 }
 
 .tabs-body {
@@ -42,10 +42,10 @@ img {
 }
 
 .tabs.repositioned {
-  transform: rotateZ(-90deg);
-  position: fixed;
   left: -200px;
+  position: fixed;
   top: 250px;
+  transform: rotateZ(-90deg);
 }
 
 /* Theme selection tabs - @tabs */
@@ -72,7 +72,6 @@ img {
 .theme-tab.selected {
   border-bottom: none;
   cursor: default;
-  background-color: #eeeeee;
 }
 
 /* Logos - @logos */
@@ -155,11 +154,12 @@ img {
 #industrial-manufacturing-color,
 #petroleum-refining-color,
 #pharmaceutical-biotech-color {
-  color: white;
-  text-align: center;
   border-radius: 7px;
-  margin: 4px 0;
+  color: #FFFFFF;
   height: 25px;
+  margin: 4px 0;
+  padding: 0;
+  text-align: center;
 }
 
 /* Specialty Colors - @specialty*/
@@ -246,8 +246,8 @@ img {
 
 .dark-theme .tabs-body,
 .dark-theme .table-of-contents {
-  border-top: none;
   border-bottom: none;
+  border-top: none;
 }
 
 .dark-theme.theme-tab > span:before,
@@ -269,7 +269,7 @@ img {
 }
 
 .dark-theme #secondary-color circle {
-  fill: #337ab7;
+  fill: #337AB7;
 }
 
 .dark-theme #primary-background-color circle {
@@ -308,13 +308,13 @@ img {
 
 .light-theme .tabs-body,
 .light-theme .table-of-contents {
-  border-top: none;
   border-bottom: none;
+  border-top: none;
 }
 
 .light-theme.theme-tab > span:before,
 .light-theme #primary-color:before {
-  color: #1C4695;
+  color: #337AB7;
 }
 
 .light-theme.theme-tab {
@@ -352,7 +352,7 @@ img {
 .monochrome-theme h3,
 .monochrome-theme h4,
 .monochrome-theme h5 {
-  color:  #333333
+  color:  #000000
 }
 
 .monochrome-theme.theme-tab,
@@ -369,8 +369,8 @@ img {
 
 .monochrome-theme .tabs-body,
 .monochrome-theme .table-of-contents {
-  border-top: none;
   border-bottom: none;
+  border-top: none;
 }
 
 .monochrome-theme.theme-tab > span:before,
@@ -402,4 +402,11 @@ img {
 
 .monochrome-theme #secondary-background-color circle {
   fill: #888888;
+}
+
+/* Responsive Font */
+@media only screen and (max-width: 425px) {
+  .tabs-body {
+    font-size: 0.8rem;
+  }
 }
