@@ -63,16 +63,16 @@ function colorCodeGenerator() {
       cmykCode: '0, 36, 93, 5',
     },
     primaryBackgroundColor: {
-      hexCode: '#AAAAAA',
-      rgbaCode: '170, 170, 170, 1',
-      hslaCode: '0, 0%, 67%, 1',
-      cmykCode: '0, 0, 0, 33',
+      hexCode: '#EEEEEE',
+      rgbaCode: '238, 238, 238, 1',
+      hslaCode: '0, 0%, 93%, 1',
+      cmykCode: '0, 0, 0, 7',
     },
     secondaryBackgroundColor: {
-      hexCode: '#888888',
-      rgbaCode: '136, 136, 136, 1',
-      hslaCode: '0, 0%, 53%, 1',
-      cmykCode: '0, 0, 0, 47',
+      hexCode: '#CCCCCC',
+      rgbaCode: '204, 204, 204, 1',
+      hslaCode: '0, 0%, 80%, 1',
+      cmykCode: '0, 0, 0, 20',
     },
   };
 
@@ -90,16 +90,16 @@ function colorCodeGenerator() {
       cmykCode: '0, 0, 0, 60',
     },
     primaryBackgroundColor: {
-      hexCode: '#EEEEEE',
-      rgbaCode: '238, 238, 238, 1',
-      hslaCode: '0, 0%, 93%, 1',
-      cmykCode: '0, 0, 0, 7',
+      hexCode: '#AAAAAA',
+      rgbaCode: '170, 170, 170, 1',
+      hslaCode: '0, 0%, 67%, 1',
+      cmykCode: '0, 0, 0, 33',
     },
     secondaryBackgroundColor: {
-      hexCode: '#CCCCCC',
-      rgbaCode: '204, 204, 204, 1',
-      hslaCode: '0, 0%, 80%, 1',
-      cmykCode: '0, 0, 0, 20',
+      hexCode: '#888888',
+      rgbaCode: '136, 136, 136, 1',
+      hslaCode: '0, 0%, 53%, 1',
+      cmykCode: '0, 0, 0, 47',
     },
   };
 

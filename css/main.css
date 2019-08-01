@@ -282,7 +282,7 @@ img {
 }
 
 .light-theme .theme-tab.selected {
-  background-color: #AAAAAA;
+  background-color: #EEEEEE;
 }
 
 .light-theme.theme-tab > span:before,
@@ -291,12 +291,12 @@ img {
 }
 
 .light-theme.theme-tab {
-  background-color: #888888;
+  background-color: #CCCCCC;
 }
 
 .light-theme .tabs-body,
 .light-theme .table-of-contents {
-  background-color: #AAAAAA;
+  background-color: #EEEEEE;
 }
 
 .light-theme #primary-color circle {
@@ -308,23 +308,42 @@ img {
 }
 
 .light-theme #primary-background-color circle {
-  fill: #AAAAAA;
+  fill: #EEEEEE;
   stroke: #333333;
 }
 
 .light-theme #secondary-background-color circle {
-  fill: #888888;
+  fill: #CCCCCC;
 }
 
 /* Monochrome Theme - @monochrome */
+.monochrome-theme p,
+.monochrome-theme span,
+.monochrome-theme.theme-tab span,
+.monochrome-theme h1,
+.monochrome-theme h2,
+.monochrome-theme h3,
+.monochrome-theme h4,
+.monochrome-theme h5 {
+  color:  #333333
+}
+
+.monochrome-theme .theme-tab.selected {
+  background-color: #AAAAAA;
+}
+
 .monochrome-theme.theme-tab > span:before,
 .monochrome-theme #primary-color:before {
   color: #444444;
 }
 
+.monochrome-theme.theme-tab {
+  background-color: #888888;
+}
+
 .monochrome-theme .tabs-body,
 .monochrome-theme .table-of-contents {
-  background-color: #eeeeee;
+  background-color: #AAAAAA;
 }
 
 .monochrome-theme #primary-color circle {
@@ -336,10 +355,10 @@ img {
 }
 
 .monochrome-theme #primary-background-color circle {
-  fill: #EEEEEE;
+  fill: #AAAAAA;
   stroke: #333333;
 }
 
 .monochrome-theme #secondary-background-color circle {
-  fill: #CCCCCC;
+  fill: #888888;
 }
