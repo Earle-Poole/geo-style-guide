@@ -270,14 +270,33 @@ img {
 }
 
 /* Light Theme - @light */
+.light-theme p,
+.light-theme span,
+.light-theme.theme-tab span,
+.light-theme h1,
+.light-theme h2,
+.light-theme h3,
+.light-theme h4,
+.light-theme h5 {
+  color:  #333333
+}
+
+.light-theme .theme-tab.selected {
+  background-color: #AAAAAA;
+}
+
 .light-theme.theme-tab > span:before,
 .light-theme #primary-color:before {
   color: #1C4695;
 }
 
+.light-theme.theme-tab {
+  background-color: #888888;
+}
+
 .light-theme .tabs-body,
 .light-theme .table-of-contents {
-  background-color: #eeeeee;
+  background-color: #AAAAAA;
 }
 
 .light-theme #primary-color circle {
@@ -290,6 +309,7 @@ img {
 
 .light-theme #primary-background-color circle {
   fill: #AAAAAA;
+  stroke: #333333;
 }
 
 .light-theme #secondary-background-color circle {
