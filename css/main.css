@@ -219,6 +219,20 @@ img {
 
 
 /* Dark Theme - @dark */
+.dark-theme p,
+.dark-theme span,
+.dark-theme h1,
+.dark-theme h2,
+.dark-theme h3,
+.dark-theme h4,
+.dark-theme h5 {
+  color:  #eeeeee
+}
+
+.dark-theme .theme-tab.selected {
+  background-color: #444444;
+}
+
 .dark-theme .theme-tab > span:before,
 .dark-theme #primary-color:before {
   color: #F39C12;
@@ -226,7 +240,7 @@ img {
 
 .dark-theme .tabs-body, 
 .dark-theme .table-of-contents {
-  background-color: #eeeeee;
+  background-color: #444444;
 }
 
 .dark-theme #primary-color circle {
@@ -244,6 +258,7 @@ img {
 
 .dark-theme #secondary-background-color circle {
   fill: #333333;
+  stroke: #EEEEEE;
 }
 
 /* Light Theme - @light */
