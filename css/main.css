@@ -35,6 +35,17 @@ img {
   padding: 10px 0;
 }
 
+.table-of-contents.repositioned {
+  margin-top: 40px;
+}
+
+.tabs.repositioned {
+  transform: rotateZ(-90deg);
+  position: fixed;
+  left: -200px;
+  top: 250px;
+}
+
 /* Theme selection tabs - @tabs */
 .theme-tab {
   background-color: #cccccc;
@@ -92,8 +103,13 @@ img {
 
 /* Icons - @icons */
 .icon-container,
-.white-icon-container{
+.white-icon-container {
   margin: 10px;
+}
+
+.icon-container {
+  background: #EEEEEE22;
+  border-radius: 10px;
 }
 
 .white-icon-container {
@@ -119,10 +135,10 @@ img {
 }
 
 /* Color Palette base - @color-palette*/
-#primary-color h5,
-#secondary-color h5,
-#primary-background-color h5,
-#secondary-background-color h5 {
+#primary-color h3,
+#secondary-color h3,
+#primary-background-color h3,
+#secondary-background-color h3 {
   text-align: center;
 }
 

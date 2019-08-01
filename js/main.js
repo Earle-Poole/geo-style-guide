@@ -45,6 +45,8 @@ function colorCodeGenerator() {
     secondaryBackgroundHSLA = document.querySelector('#hsla-secondary-background-code'),
     secondaryBackgroundCMYK = document.querySelector('#cmyk-secondary-background-code')
 
+
+
   function darkThemeSetter() {
     primaryHex.innerHTML = darkThemeObj.primaryColor.hexCode;
     primaryRGBA.innerHTML = darkThemeObj.primaryColor.rgbaCode;
@@ -212,9 +214,21 @@ function colorCodeGenerator() {
   };
 };
 
+function repositionTabs () {
+  let themeTabs = document.querySelector('.tabs');
+  let tableOfContents = document.querySelector('.table-of-contents');
 
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    themeTabs.classList.add('repositioned');
+    tableOfContents.classList.add('repositioned');
+  } else {
+    themeTabs.classList.remove('repositioned');
+    tableOfContents.classList.remove('repositioned');
+  }
+};
 
 document.addEventListener("DOMContentLoaded", (e) => {
   selectNewTab();
   colorCodeGenerator();
+  window.onscroll = () => {repositionTabs()};
 });
