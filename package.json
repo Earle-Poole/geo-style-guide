@@ -1,0 +1,26 @@
+{
+  "name": "geoxplorer-style-guide",
+  "version": "1.0.0",
+  "description": "GeoXplorer Style Guide by Earle Poole",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Earle-Poole/geo-style-guide.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Earle-Poole/geo-style-guide/issues"
+  },
+  "homepage": "https://github.com/Earle-Poole/geo-style-guide#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3"
+  }
+}

@@ -13,13 +13,16 @@ img {
   width: 100%;
 }
 
-.theme-tab, .tabs-body, .table-of-contents {
+.theme-tab, 
+.tabs-body, 
+.table-of-contents {
   border: 1px solid #444444;
   box-sizing: border-box;
 }
 
 /* Body of selected tab - @body */
-.tabs-body, .table-of-contents {
+.tabs-body, 
+.table-of-contents {
   height: auto;
   border-top: none;
 }
@@ -221,6 +224,7 @@ img {
 /* Dark Theme - @dark */
 .dark-theme p,
 .dark-theme span,
+.dark-theme.theme-tab span,
 .dark-theme h1,
 .dark-theme h2,
 .dark-theme h3,
@@ -233,9 +237,13 @@ img {
   background-color: #444444;
 }
 
-.dark-theme .theme-tab > span:before,
+.dark-theme.theme-tab > span:before,
 .dark-theme #primary-color:before {
   color: #F39C12;
+}
+
+.dark-theme.theme-tab {
+  background-color: #333333;
 }
 
 .dark-theme .tabs-body, 
