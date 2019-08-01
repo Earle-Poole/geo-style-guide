@@ -218,7 +218,7 @@ function repositionTabs () {
   let themeTabs = document.querySelector('.tabs');
   let tableOfContents = document.querySelector('.table-of-contents');
 
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+  if (document.body.scrollTop > 65 || document.documentElement.scrollTop > 65) {
     themeTabs.classList.add('repositioned');
     tableOfContents.classList.add('repositioned');
   } else {
@@ -230,5 +230,6 @@ function repositionTabs () {
 document.addEventListener("DOMContentLoaded", (e) => {
   selectNewTab();
   colorCodeGenerator();
+  repositionTabs();
   window.onscroll = () => {repositionTabs()};
 });

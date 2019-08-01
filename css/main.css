@@ -22,7 +22,6 @@ img {
 .tabs-body, .table-of-contents {
   height: auto;
   border-top: none;
-  background-color: #eeeeee;
 }
 
 .tabs-body {
@@ -225,6 +224,11 @@ img {
   color: #F39C12;
 }
 
+.dark-theme .tabs-body, 
+.dark-theme .table-of-contents {
+  background-color: #eeeeee;
+}
+
 .dark-theme #primary-color circle {
   fill: #F39C12;
 }
@@ -248,6 +252,11 @@ img {
   color: #1C4695;
 }
 
+.light-theme .tabs-body,
+.light-theme .table-of-contents {
+  background-color: #eeeeee;
+}
+
 .light-theme #primary-color circle {
   fill: #F39C12;
 }
@@ -268,6 +277,11 @@ img {
 .monochrome-theme.theme-tab > span:before,
 .monochrome-theme #primary-color:before {
   color: #444444;
+}
+
+.monochrome-theme .tabs-body,
+.monochrome-theme .table-of-contents {
+  background-color: #eeeeee;
 }
 
 .monochrome-theme #primary-color circle {
