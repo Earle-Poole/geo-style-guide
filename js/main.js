@@ -224,9 +224,22 @@ function repositionTabs() {
   }
 }
 
+function tableOfContentsShowHide() {
+  const tableOfContentsArrow = document.querySelector('#table-of-contents-collapse');
+
+  if (tableOfContentsArrow.classList.contains('expanded')) {
+    tableOfContentsArrow.classList.remove('expanded');
+    tableOfContentsArrow.classList.add('collapsed');
+  } else {
+    tableOfContentsArrow.classList.remove('collapsed');
+    tableOfContentsArrow.classList.add('expanded');
+  }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   selectNewTab();
   colorCodeGenerator();
   repositionTabs();
   window.onscroll = () => { repositionTabs(); };
+  document.querySelector('#table-of-contents-collapse').addEventListener('click', () => { tableOfContentsShowHide(); });
 });

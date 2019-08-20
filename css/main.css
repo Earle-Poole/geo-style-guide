@@ -5,6 +5,11 @@ body {
   width: 100%;
 }
 
+* {
+  display: inline-block;
+  box-sizing: border-box;
+}
+
 hr {
   width: calc(100% - 20px);
 }
@@ -46,6 +51,37 @@ img {
   position: fixed;
   top: 250px;
   transform: rotateZ(-90deg);
+}
+
+#table-of-contents-collapse {
+  margin: 0 0 0 10px;
+  cursor: pointer;
+}
+
+.collapsed {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); 
+  -moz-transition: transform 150ms ease;
+  -webkit-transition: transform 150ms ease;
+  -o-transition: transform 150ms ease;
+  -ms-transition: transform 150ms ease;        
+  transition: transform 150ms ease;
+}
+
+.expanded {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg); 
+  -moz-transition: transform 150ms ease;
+  -webkit-transition: transform 150ms ease;
+  -o-transition: transform 150ms ease;
+  -ms-transition: transform 150ms ease;        
+  transition: transform 150ms ease;
 }
 
 /* Theme selection tabs - @tabs */
