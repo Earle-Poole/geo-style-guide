@@ -46,13 +46,6 @@ img {
   margin-top: 40px;
 }
 
-.tabs.repositioned {
-  left: -200px;
-  position: fixed;
-  top: 250px;
-  transform: rotateZ(-90deg);
-}
-
 #table-of-contents-collapse {
   margin: 0 0 0 10px;
   cursor: pointer;
@@ -85,6 +78,24 @@ img {
 }
 
 /* Theme selection tabs - @tabs */
+.tabs.repositioned {
+  left: -200px;
+  position: fixed;
+  transform: rotateZ(-90deg);
+}
+
+.tabs.repositioned.not-bottom {
+  top: 250px;
+  transition: 250ms;
+  transition-property: top;
+}
+
+.tabs.repositioned.bottom {
+  top: calc(100% - 325px);
+  transition: 250ms;
+  transition-property: top;
+}
+
 .theme-tab {
   border-radius: 10px 10px 0 0;
   height: 40px;
@@ -168,6 +179,10 @@ img {
 /* Fonts - @fonts */
 .font-title-subtext {
   font-size: 10px;
+}
+
+#font > div > p {
+  margin-bottom: 0.5rem;
 }
 
 /* Color Palette base - @color-palette*/

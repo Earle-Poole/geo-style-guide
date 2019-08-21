@@ -1,6 +1,8 @@
 /* eslint-disable no-restricted-syntax */
 function colorCodeGenerator() {
-  const currentTheme = document.querySelector('.container-fluid').classList.item(1);
+  const currentTheme = document
+    .querySelector('.container-fluid')
+    .classList.item(1);
 
   const primaryHex = document.querySelector('#hex-primary-code');
   const primaryRGBA = document.querySelector('#rgba-primary-code');
@@ -12,15 +14,31 @@ function colorCodeGenerator() {
   const secondaryHSLA = document.querySelector('#hsla-secondary-code');
   const secondaryCMYK = document.querySelector('#cmyk-secondary-code');
 
-  const primaryBackgroundHex = document.querySelector('#hex-primary-background-code');
-  const primaryBackgroundRGBA = document.querySelector('#rgba-primary-background-code');
-  const primaryBackgroundHSLA = document.querySelector('#hsla-primary-background-code');
-  const primaryBackgroundCMYK = document.querySelector('#cmyk-primary-background-code');
+  const primaryBackgroundHex = document.querySelector(
+    '#hex-primary-background-code',
+  );
+  const primaryBackgroundRGBA = document.querySelector(
+    '#rgba-primary-background-code',
+  );
+  const primaryBackgroundHSLA = document.querySelector(
+    '#hsla-primary-background-code',
+  );
+  const primaryBackgroundCMYK = document.querySelector(
+    '#cmyk-primary-background-code',
+  );
 
-  const secondaryBackgroundHex = document.querySelector('#hex-secondary-background-code');
-  const secondaryBackgroundRGBA = document.querySelector('#rgba-secondary-background-code');
-  const secondaryBackgroundHSLA = document.querySelector('#hsla-secondary-background-code');
-  const secondaryBackgroundCMYK = document.querySelector('#cmyk-secondary-background-code');
+  const secondaryBackgroundHex = document.querySelector(
+    '#hex-secondary-background-code',
+  );
+  const secondaryBackgroundRGBA = document.querySelector(
+    '#rgba-secondary-background-code',
+  );
+  const secondaryBackgroundHSLA = document.querySelector(
+    '#hsla-secondary-background-code',
+  );
+  const secondaryBackgroundCMYK = document.querySelector(
+    '#cmyk-secondary-background-code',
+  );
 
   const darkThemeObj = {
     primaryColor: {
@@ -184,7 +202,8 @@ function colorCodeGenerator() {
       monochromeThemeSetter();
       break;
     }
-    default: throw new Error('How is there no theme?');
+    default:
+      throw new Error('How is there no theme?');
   }
 }
 
@@ -197,7 +216,9 @@ function selectNewTab() {
         // not selected
         const selectedTab = document.querySelector('.theme-tab.selected');
         const container = document.querySelector('.container-fluid');
-        const currentTheme = document.querySelector('.container-fluid').classList.item(1);
+        const currentTheme = document
+          .querySelector('.container-fluid')
+          .classList.item(1);
         const nextTheme = tab.classList.item(2);
 
         selectedTab.classList.remove('selected');
@@ -218,6 +239,16 @@ function repositionTabs() {
   if (document.body.scrollTop > 65 || document.documentElement.scrollTop > 65) {
     themeTabs.classList.add('repositioned');
     tableOfContents.classList.add('repositioned');
+    if (
+      document.documentElement.scrollTop + window.innerHeight + 40
+      >= document.documentElement.offsetHeight
+    ) {
+      themeTabs.classList.add('bottom');
+      themeTabs.classList.remove('not-bottom');
+    } else {
+      themeTabs.classList.add('not-bottom');
+      themeTabs.classList.remove('bottom');
+    }
   } else {
     themeTabs.classList.remove('repositioned');
     tableOfContents.classList.remove('repositioned');
@@ -225,7 +256,9 @@ function repositionTabs() {
 }
 
 function tableOfContentsShowHide() {
-  const tableOfContentsArrow = document.querySelector('#table-of-contents-collapse');
+  const tableOfContentsArrow = document.querySelector(
+    '#table-of-contents-collapse',
+  );
 
   if (tableOfContentsArrow.classList.contains('expanded')) {
     tableOfContentsArrow.classList.remove('expanded');
@@ -240,6 +273,12 @@ document.addEventListener('DOMContentLoaded', () => {
   selectNewTab();
   colorCodeGenerator();
   repositionTabs();
-  window.onscroll = () => { repositionTabs(); };
-  document.querySelector('#table-of-contents-collapse').addEventListener('click', () => { tableOfContentsShowHide(); });
+  window.onscroll = () => {
+    repositionTabs();
+  };
+  document
+    .querySelector('#table-of-contents-collapse')
+    .addEventListener('click', () => {
+      tableOfContentsShowHide();
+    });
 });
