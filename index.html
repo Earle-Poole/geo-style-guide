@@ -30,18 +30,27 @@
     <!-- Table of Contents section -->
     <div class="row table-of-contents">
       <div class="col-12 d-inline-block">
-        <h1 class=" d-inline-block">Table of Contents</h1><p id="table-of-contents-collapse" class="expanded">&#11167;</p>
+        <h1 class=" d-inline-block">Table of Contents</h1><p id="table-of-contents-arrow" class="expanded">&#11167;</p>
       </div>
-      <ul>
-        <li><a href="#color-palette">Color Palette</a></li><br/>
-        <li><a href="#imagery">Imagery</a></li><br/>
-        <li><a href="#font">Font</a></li><br/>
-        <li></li>
+      <ul id="table-of-contents-list" class="expanded">
+        <li><p>1.0</p><a href="#color-palette">Color Palette</a></li><br/>
+          <ul>
+            <li><p>1.1</p><a href="#primary-color">Primary Color</a></li><br/>
+            <li><p>1.2</p><a href="#secondary-color">Secondary Color</a></li><br/>
+            <li><p>1.3</p><a href="#primary-background-color">Primary Background Color</a></li><br/>
+            <li><p>1.4</p><a href="#secondary-background-color">Secondary Background Color</a></li><br/>
+            <li><p>1.5</p><a href="#specialty-color">Specialty Colors</a></li><br/>
+          </ul><br/>
+        <li><p>2.0</p><a href="#imagery">Imagery</a></li><br/>
+          <ul>
+            <li><p>2.1</p><a href="#imagery-logos">Logos</a></li><br/>
+            <li><p>2.2</p><a href="#imagery-icons">Icons</a></li><br/>
+          </ul><br/>
+        <li><p>3.0</p><a href="#font">Font</a></li><br/>
       </ul>
       <hr>
     </div>
     <!-- END Table of Contents section -->
-
     <!-- Body section -->
     <div class="row tabs-body">
       <!-- Color Palette section -->
@@ -63,7 +72,7 @@
               <div class="col-6 text-right">
                 <span>HEX :</span>
               </div>
-              <div class="col-6">
+              <div class="col-6 text-left">
                 <span id="hex-primary-code"></span>
               </div>
             </div>
@@ -71,7 +80,7 @@
               <div class="col-6 text-right">
                 <span>RGBA :</span>
               </div>
-              <div class="col-6">
+              <div class="col-6 text-left">
                 <span id="rgba-primary-code"></span>
               </div>
             </div>
@@ -79,7 +88,7 @@
               <div class="col-6 text-right">
                 <span>HSLA :</span>
               </div>
-              <div class="col-6">
+              <div class="col-6 text-left">
                 <span id="hsla-primary-code"></span>
               </div>
             </div>
@@ -87,7 +96,7 @@
               <div class="col-6 text-right">
                 <span>CMYK :</span>
               </div>
-              <div class="col-6">
+              <div class="col-6 text-left">
                 <span id="cmyk-primary-code"></span>
               </div>
             </div>
@@ -105,7 +114,7 @@
               <div class="col-6 text-right">
                 <span>HEX :</span>
               </div>
-              <div class="col-6">
+              <div class="col-6 text-left">
                 <span id="hex-secondary-code"></span>
               </div>
             </div>
@@ -113,7 +122,7 @@
               <div class="col-6 text-right">
                 <span>RGBA :</span>
               </div>
-              <div class="col-6">
+              <div class="col-6 text-left">
                 <span id="rgba-secondary-code"></span>
               </div>
             </div>
@@ -121,7 +130,7 @@
               <div class="col-6 text-right">
                 <span>HSLA :</span>
               </div>
-              <div class="col-6">
+              <div class="col-6 text-left">
                 <span id="hsla-secondary-code"></span>
               </div>
             </div>
@@ -129,7 +138,7 @@
               <div class="col-6 text-right">
                 <span>CMYK :</span>
               </div>
-              <div class="col-6">
+              <div class="col-6 text-left">
                 <span id="cmyk-secondary-code"></span>
               </div>
             </div>
@@ -151,7 +160,7 @@
               <div class="col-6 text-right">
                 <span>HEX :</span>
               </div>
-              <div class="col-6">
+              <div class="col-6 text-left">
                 <span id="hex-primary-background-code"></span>
               </div>
             </div>
@@ -159,7 +168,7 @@
               <div class="col-6 text-right">
                 <span>RGBA :</span>
               </div>
-              <div class="col-6">
+              <div class="col-6 text-left">
                 <span id="rgba-primary-background-code"></span>
               </div>
             </div>
@@ -167,7 +176,7 @@
               <div class="col-6 text-right">
                 <span>HSLA :</span>
               </div>
-              <div class="col-6">
+              <div class="col-6 text-left">
                 <span id="hsla-primary-background-code"></span>
               </div>
             </div>
@@ -175,7 +184,7 @@
               <div class="col-6 text-right">
                 <span>CMYK :</span>
               </div>
-              <div class="col-6">
+              <div class="col-6 text-left">
                 <span id="cmyk-primary-background-code"></span>
               </div>
             </div>
@@ -193,7 +202,7 @@
               <div class="col-6 text-right">
                 <span>HEX :</span>
               </div>
-              <div class="col-6">
+              <div class="col-6 text-left">
                 <span id="hex-secondary-background-code"></span>
               </div>
             </div>
@@ -201,7 +210,7 @@
               <div class="col-6 text-right">
                 <span>RGBA :</span>
               </div>
-              <div class="col-6">
+              <div class="col-6 text-left">
                 <span id="rgba-secondary-background-code"></span>
               </div>
             </div>
@@ -209,7 +218,7 @@
               <div class="col-6 text-right">
                 <span>HSLA :</span>
               </div>
-              <div class="col-6">
+              <div class="col-6 text-left">
                 <span id="hsla-secondary-background-code"></span>
               </div>
             </div>
@@ -217,7 +226,7 @@
               <div class="col-6 text-right">
                 <span>CMYK :</span>
               </div>
-              <div class="col-6">
+              <div class="col-6 text-left">
                 <span id="cmyk-secondary-background-code"></span>
               </div>
             </div>
@@ -237,7 +246,7 @@
             <!-- Specialty Colors List section -->
             <div class="row">
               <!-- Electric Power Color section -->
-              <div class="col-12 col-md-6">
+              <div class="col-12 col-lg-6">
                 <div class="row">
                   <div class="col-7 text-right">
                     <span>Electric Power:</span>
@@ -249,7 +258,7 @@
               </div>
               <!-- END Electric Power Color section -->
               <!-- Chemical Processing Color section -->
-              <div class="col-12 col-md-6">
+              <div class="col-12 col-lg-6">
                 <div class="row">
                   <div class="col-7 text-right">
                     <span>Chemical Processing (CPI):</span>
@@ -261,7 +270,7 @@
               </div>
               <!-- END Chemical Processing Color section -->
               <!-- Terminals Color section -->
-              <div class="col-12 col-md-6">
+              <div class="col-12 col-lg-6">
                 <div class="row">
                   <div class="col-7 text-right">
                     <span>Terminals:</span>
@@ -273,7 +282,7 @@
               </div>
               <!-- END Terminals Color section -->
               <!-- Metals & Minerals Color section -->
-              <div class="col-12 col-md-6">
+              <div class="col-12 col-lg-6">
                 <div class="row">
                   <div class="col-7 text-right">
                     <span>Metals & Minerals:</span>
@@ -285,7 +294,7 @@
               </div>
               <!-- END Metals & Minerals Color section -->
               <!-- Pipelines Color section -->
-              <div class="col-12 col-md-6">
+              <div class="col-12 col-lg-6">
                 <div class="row">
                   <div class="col-7 text-right">
                     <span>Pipelines:</span>
@@ -297,7 +306,7 @@
               </div>
               <!-- END Pipelines Color section -->
               <!-- Pulp, Paper & Wood Color section -->
-              <div class="col-12 col-md-6">
+              <div class="col-12 col-lg-6">
                 <div class="row">
                   <div class="col-7 text-right">
                     <span>Pulp, Paper & Wood:</span>
@@ -309,7 +318,7 @@
               </div>
               <!-- END Pulp, Paper & Wood Color section -->
               <!-- Production Color section -->
-              <div class="col-12 col-md-6">
+              <div class="col-12 col-lg-6">
                   <div class="row">
                     <div class="col-7 text-right">
                       <span>Production:</span>
@@ -321,7 +330,7 @@
                 </div>
                 <!-- END Production Color section -->
                 <!-- Food & Beverage Color section -->
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-lg-6">
                   <div class="row">
                     <div class="col-7 text-right">
                       <span>Food & Beverage:</span>
@@ -333,7 +342,7 @@
                 </div>
                 <!-- END Food & Beverage Color section -->
                 <!-- Alternative Fuels Color section -->
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-lg-6">
                   <div class="row">
                     <div class="col-7 text-right">
                       <span>Alternative Fuels:</span>
@@ -345,7 +354,7 @@
                 </div>
                 <!-- END Alternative Fuels Color section -->
                 <!-- Industrial Manufacturing Color section -->
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-lg-6">
                   <div class="row">
                     <div class="col-7 text-right">
                       <span>Industrial Manufacturing:</span>
@@ -357,7 +366,7 @@
                 </div>
                 <!-- END Industrial Manufacturing Color section -->
                 <!-- Petroleum Refining (HPI) Color section -->
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-lg-6">
                   <div class="row">
                     <div class="col-7 text-right">
                       <span>Petroleum Refining (HPI):</span>
@@ -369,7 +378,7 @@
                 </div>
                 <!-- END Petroleum Refining (HPI) Color section -->
                 <!-- Pharmaceutical & Biotech Color section -->
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-lg-6">
                   <div class="row">
                     <div class="col-7 text-right">
                       <span>Pharmaceutical & Biotech:</span>
@@ -397,7 +406,7 @@
         <!-- Logo section -->
         <div class="row text-center">
           <div class="col-12">
-            <h3 class="col-2">Logos</h3>
+            <h3 class="col-2" id="imagery-logos">Logos</h3>
           </div>
           <!-- Globe Logos section -->
           <div class="col-12 col-lg-4">
@@ -446,7 +455,7 @@
         <!-- Icon section -->
         <div class="row text-center">
           <div class="col-12">
-            <h3 class="col-2">Icons</h3>
+            <h3 class="col-2" id="imagery-icons">Icons</h3>
           </div>
           <!-- Craft Icon section -->
           

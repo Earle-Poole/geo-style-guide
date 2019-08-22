@@ -46,35 +46,51 @@ img {
   margin-top: 40px;
 }
 
-#table-of-contents-collapse {
+#table-of-contents-arrow {
   margin: 0 0 0 10px;
   cursor: pointer;
+  -moz-transition: transform 150ms ease;
+  -webkit-transition: transform 150ms ease;
+  -o-transition: transform 150ms ease;
+  -ms-transition: transform 150ms ease;        
+  transition: transform 150ms ease;
 }
 
-.collapsed {
+#table-of-contents-arrow.collapsed {
   -moz-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   -o-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg); 
-  -moz-transition: transform 150ms ease;
-  -webkit-transition: transform 150ms ease;
-  -o-transition: transform 150ms ease;
-  -ms-transition: transform 150ms ease;        
-  transition: transform 150ms ease;
 }
 
-.expanded {
+#table-of-contents-arrow.expanded {
   -moz-transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
   -o-transform: rotate(360deg);
   -ms-transform: rotate(360deg);
   transform: rotate(360deg); 
-  -moz-transition: transform 150ms ease;
-  -webkit-transition: transform 150ms ease;
-  -o-transition: transform 150ms ease;
-  -ms-transition: transform 150ms ease;        
-  transition: transform 150ms ease;
+}
+
+#table-of-contents-list {
+  overflow: hidden;
+  -moz-transition: max-height 500ms ease, overflow 500ms ease;
+  -webkit-transition: max-height 500ms ease, overflow 500ms ease;
+  -o-transition: max-height 500ms ease, overflow 500ms ease;
+  -ms-transition: max-height 500ms ease, overflow 500ms ease;      
+  transition: max-height 500ms ease, overflow 500ms ease;
+}
+
+#table-of-contents-list.collapsed{ 
+  max-height: 0px;
+}
+
+#table-of-contents-list.expanded{ 
+  max-height: 400px;
+}
+
+.table-of-contents > ul li > p {
+  margin: 0 5px 0 0;
 }
 
 /* Theme selection tabs - @tabs */
@@ -82,18 +98,16 @@ img {
   left: -200px;
   position: fixed;
   transform: rotateZ(-90deg);
+  transition: 150ms;
+  transition-property: top;
 }
 
 .tabs.repositioned.not-bottom {
   top: 250px;
-  transition: 250ms;
-  transition-property: top;
 }
 
 .tabs.repositioned.bottom {
-  top: calc(100% - 325px);
-  transition: 250ms;
-  transition-property: top;
+  top: calc(100% - 350px);
 }
 
 .theme-tab {
@@ -186,10 +200,10 @@ img {
 }
 
 /* Color Palette base - @color-palette*/
-#primary-color h3,
-#secondary-color h3,
-#primary-background-color h3,
-#secondary-background-color h3 {
+#primary-color,
+#secondary-color,
+#primary-background-color,
+#secondary-background-color {
   text-align: center;
 }
 

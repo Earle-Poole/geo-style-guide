@@ -257,15 +257,22 @@ function repositionTabs() {
 
 function tableOfContentsShowHide() {
   const tableOfContentsArrow = document.querySelector(
-    '#table-of-contents-collapse',
+    '#table-of-contents-arrow',
+  );
+  const tableOfContents = document.querySelector(
+    '#table-of-contents-list',
   );
 
   if (tableOfContentsArrow.classList.contains('expanded')) {
     tableOfContentsArrow.classList.remove('expanded');
     tableOfContentsArrow.classList.add('collapsed');
+    tableOfContents.classList.remove('expanded');
+    tableOfContents.classList.add('collapsed');
   } else {
     tableOfContentsArrow.classList.remove('collapsed');
     tableOfContentsArrow.classList.add('expanded');
+    tableOfContents.classList.remove('collapsed');
+    tableOfContents.classList.add('expanded');
   }
 }
 
@@ -277,7 +284,7 @@ document.addEventListener('DOMContentLoaded', () => {
     repositionTabs();
   };
   document
-    .querySelector('#table-of-contents-collapse')
+    .querySelector('#table-of-contents-arrow')
     .addEventListener('click', () => {
       tableOfContentsShowHide();
     });
