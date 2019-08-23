@@ -199,6 +199,10 @@ img {
   margin-bottom: 0.5rem;
 }
 
+#font .text-truncate {
+  width: inherit;
+}
+
 /* Color Palette base - @color-palette*/
 #primary-color,
 #secondary-color,
