@@ -142,7 +142,7 @@ img {
 }
 
 .logo-container img {
-  width: 300px;
+  max-width: 300px;
 }
 
 .logo-container .logo-transparent {
